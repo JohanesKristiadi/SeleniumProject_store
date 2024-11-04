@@ -3,18 +3,17 @@ package steps;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import hooks.hooks;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 
 public class login {
 	
-	WebDriver driver;
+	WebDriver driver = hooks.driver;
 	
 	@Given("I open website {string}")
 	public void iOpenWebsite(String url) {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
-		driver = new ChromeDriver();
 		driver.navigate().to(url);
 		driver.manage().window().maximize();
 	}
