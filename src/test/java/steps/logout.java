@@ -3,12 +3,12 @@ package steps;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import hooks.hooks;
+import hooks.Hooks;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 
 public class logout {
-    WebDriver driver = hooks.driver;
+    WebDriver driver = Hooks.driver;
 
     @Given("I click sidebar")
     public void iClickSidebar() {
