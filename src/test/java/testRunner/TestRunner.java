@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.CucumberOptions.SnippetType;
 
 @CucumberOptions(
-		features = "src\\test\\java\\feature\\logout.feature",
+		features = "src\\test\\java\\feature\\addToCart.feature",
 		dryRun = false,
 		snippets = SnippetType.CAMELCASE,
 		monochrome = true,
